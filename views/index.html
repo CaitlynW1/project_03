@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./lib/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <a href="script:;"></a>
+        <img src="./images/headerLogo.png" alt="">
+        <i class="iconfont icon-sousuo"></i>
+    </div>
+
+
+    <!-- 主体 -->
+    <div class="main">
+        <!-- 展示图 -->
+        <div class="reveal"></div>
+
+        <!-- 就业课 -->
+        <div class="employment">
+            <div>
+                <i class="dot"></i>
+                <h2>就业课</h2>
+                <i class="dot"></i>
+            </div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <!-- 微课 -->
+        <div class="mini">
+            <div>
+                <i class="dot"></i>
+                <h2>微课</h2>
+                <i class="dot"></i>
+            </div>
+            <ul class="course">
+                <!-- <li>
+                    <div name="img"></div>
+                    <div name="name">【前端】微信小程序</div>
+                    <div name="count">
+                        <i>20</i>人学习
+                    </div>
+                    <div name="price" class="fr">
+                        ￥<i>199</i>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- 尾部 -->
+    <div class="end">
+        <div><i class="iconfont icon-shouye"></i>首页</div>
+        <div><i class="iconfont icon-2"></i>分类</div>
+    </div>
+
+    <!-- 微课-模板 -->
+    <script type="text/html" id="tpl">
+        {{each data}}
+        <li>
+            <div name="img" style="background-image: url({{$value.img}})"></div>
+            <div name="name">{{$value.name}}</div>
+            <div name="count">
+                <i>{{$value.count}}</i>人学习
+            </div>
+            <div name="price" class="fr">
+                ￥<i>{{$value.price}}</i>
+            </div>
+        </li>
+        {{/each}}
+    </script>
+
+    <script src="./lib/flexble.js"></script>
+    <script src="./lib/jquery.js"></script>
+    <script src="./lib/template-web.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

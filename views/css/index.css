@@ -1,0 +1,190 @@
+/* 头部 */
+
+.header {
+    height: 1.7067rem;
+    width: 100%;
+    padding: .4533rem;
+    box-sizing: border-box;
+    background-color: #446ADF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.header a {
+    display: block;
+    width: 1.0133rem;
+    height: .8rem;
+    background: url(../images/邮件.png) no-repeat;
+    background-size: contain
+}
+
+.header i {
+    color: #fff;
+    font-size: .5333rem;
+}
+
+
+/* 主体 */
+
+.main {
+    background-color: #f1f1f1;
+    padding: 1.7067rem 0 1.5467rem;
+    /* ps */
+    /* background-color: skyblue; */
+}
+
+
+/* 小标题圆点 */
+
+.dot {
+    display: inline-block;
+    width: .1067rem;
+    height: .1067rem;
+    border-radius: .0533rem;
+    background-color: #446ADF;
+}
+
+
+/* 小标题 */
+
+.main h2 {
+    display: inline-block;
+    font-size: .48rem;
+    font-weight: normal;
+    color: #446ADF;
+    vertical-align: top;
+    text-align: center;
+}
+
+
+/* 展示图 */
+
+.reveal {
+    width: 100%;
+    height: 4.5333rem;
+    background: url(../images/FE.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/* 就业课 */
+
+.employment {
+    width: 100%;
+    /* height: 6.4533rem; */
+    margin-top: .4267rem;
+    padding-top: .48rem;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.employment div {
+    text-align: center;
+}
+
+.employment ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.employment li {
+    width: 1.8667rem;
+    height: 1.8667rem;
+    border-radius: .9333rem;
+    margin: .4267rem;
+    /* ps */
+    background-color: pink;
+}
+
+.employment li:nth-child(1) {
+    background: url(../images/fe-list.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.employment li:nth-child(2) {
+    background: url(../images/java.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.employment li:nth-child(3) {
+    background: url(../images/data.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.employment li:nth-child(4) {
+    background: url(../images/python.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.employment li:nth-child(5) {
+    background: url(../images/ui.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.employment li:nth-child(6) {
+    background: url(../images/fe-list.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/* 微课 */
+
+.mini {
+    width: 100%;
+    /* height: 6.4533rem; */
+    margin-top: .4267rem;
+    padding-top: .48rem;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.mini div:first-child {
+    text-align: center;
+    margin-bottom: .16rem;
+}
+
+.mini .course {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.mini .course li {
+    width: 4.72rem;
+    margin-top: .2667rem;
+}
+
+.mini .course [name=img] {
+    width: 100%;
+    height: 2.6667rem;
+    border-radius: .1067rem;
+    /* background-image: url(../images/data.png); */
+    background-size: 100% 100%;
+}
+
+.mini .course [name=name] {
+    font-size: .4267rem;
+    font-weight: bold;
+}
+
+.mini .course [name=count] {
+    display: inline-block;
+    font-size: .3733rem;
+    color: #D0D0D0;
+}
+
+.mini .course [name=price] {
+    display: inline-block;
+    font-size: .3733rem;
+    color: #446ADF;
+    margin-right: .1067rem;
+}
+
+.mini .course i {
+    font-style: normal;
+}

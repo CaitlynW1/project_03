@@ -1,0 +1,26 @@
+/* 尾部 */
+
+.end {
+    height: 1.5467rem;
+    width: 100%;
+    padding: .1333rem 1.0667rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 2;
+    /* ps */
+    /* background-color: pink; */
+}
+
+.end div {
+    width: .8rem;
+    font-size: .3733rem;
+    color: #5bb5f5;
+}
+
+.end div i {
+    font-size: .8rem;
+}
